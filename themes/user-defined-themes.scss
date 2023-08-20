@@ -82,8 +82,8 @@
       opacity: 0;
     }
 
-    // @@@ added grow effect for tile-icon & <i>, when hover over parent <a>.item small-sized/medium-size/large-size
-    .item:hover .item-icon .tile-icon, .item:hover .item-icon i{
+    // @@@ added grow effect for tile-icon <img> & <i>, when hover over parent <a>.item small-sized/medium-size/large-size
+    .item:hover .item-icon img, .item:hover .item-icon i{
         transition: all .35s ease-in-out;
         transform: scale(1.22);  
     }
