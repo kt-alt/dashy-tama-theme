@@ -5,8 +5,8 @@
     --primary: #ffffffe6;
     --background: #0b1021;
     --background-darker: #181c3a;
-    --background-darker-transparent: #181c3aa4;  // @@@ added transparent dark color for item/widget/header backgrounds
-    --background-lighter-transparent: #6b6c7399;  // @@@ added transparent grey color for item/widget backgrounds
+    --background-darker-transparent: #181c3ad4;  // @@@ added transparent dark color for item/widget/header backgrounds
+    --background-lighter-transparent: #6b6c73c6;  // @@@ added transparent grey color for item/widget backgrounds
     // Typography
     --font-headings: 'Segoe UI', 'Podkova', 'Roboto', serif;  // @@@ added Segoe UI
     --font-body: 'Segoe UI', 'Roboto', serif;  // @@@ added Segoe UI    
@@ -42,16 +42,16 @@
     
     // Background Image
     body {
-      // @@@ changed to random unsplash bkg. update the query terms after the '?', to customize for images you want
-      background: url('https://source.unsplash.com/random/1920x1080/?calm,nature,background');
+      //@@@ changed to random unsplash bkg. update the query terms after the '?', to customize for images you want
+      background: url('https://source.unsplash.com/random/1920x1080/?dark,calm,nature,background');
       background-color: var(--background-darker);  // @@@ added dark bkg color during load
-      background-size: cover;
+      background-size: cover;      
     }
-    
+
     // @@@ added to make header, footer, & search form transparent
-    header, footer, form.normal {background-color: var(--background-darker-transparent);}
-    
-    // @@@ added widget-base background overrides
+    header, footer, form.normal { background-color: var(--background-darker-transparent); } 
+
+    // @@@ added widget-base background overrides to match Items bg tiles
     .widget-base {
       background-color: var(--background-darker-transparent);
       margin: .5rem .5rem 1rem .5rem;
@@ -70,5 +70,21 @@
     .widget-base button.action-btn {
       margin-top: .3rem;
       margin-right: .5rem;
+    }
+
+    // @@@ added to shrink some of the white space between sections
+    .collapsable {
+      margin: 0px;
+    }
+
+    // @@@ added to hide the opening method icon (on bottom right of items)
+    .opening-method-icon {
+      opacity: 0;
+    }
+
+    // @@@ added grow effect for tile-icon & <i>, when hover over parent <a>.item small-sized/medium-size/large-size
+    .item:hover .item-icon .tile-icon, .item:hover .item-icon i{
+        transition: all .35s ease-in-out;
+        transform: scale(1.22);  
     }
   }

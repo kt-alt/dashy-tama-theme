@@ -1,13 +1,13 @@
 version: "3.8"
 
 services:
-  dashy:
+  dashy-tama-theme:
     # To build from source, replace 'image: lissy93/dashy' with 'build: .'
     # build: .
     # Note: v2.0.8 used as there appears to be authentication bug in current version 2.1.1
     # Authencation is not enabled unless Guest login enabled
     image: lissy93/dashy:2.0.8
-    container_name: dashy
+    container_name: dashy-tama-theme
     # Pass in your config file below, by specifying the path on your host machine
     volumes:
       - ./config/conf.yml:/app/public/conf.yml

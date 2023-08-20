@@ -6,6 +6,7 @@ This project contains a custom theme for [Dashy](https://github.com/Lissy93/dash
 
 - a random background image from [Unsplash.com](https://unsplash.com/) (on every page load) and can be customized
 - added transparent background tile for Widgets (to match the Items one)
+- added a tile icon grow effect on hover (and hide the open method icon in bottom right)
 - transparent header & footer (and other minor stuff)
 
 ## Usage
