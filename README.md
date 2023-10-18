@@ -2,6 +2,8 @@
 
 ![Dashy Tama Theme](screenshot/dashy_tama_screenshot.png)
 
+***[Update]*** This theme has been added into the official Dashy repo now.  This repo is deprecated and will be closed repository shortly.
+
 This project contains a custom theme for [Dashy](https://github.com/Lissy93/dashy).  The theme is based on the built-in Adventure theme and has the following additions:
 
 - a random background image from [Unsplash.com](https://unsplash.com/) (on every page load) and can be customized
